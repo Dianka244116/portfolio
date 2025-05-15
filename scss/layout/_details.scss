@@ -1,0 +1,35 @@
+.details {
+    display: grid;
+    grid-template-rows: repeat(1fr, 5);
+    place-items: start;
+    place-content: start;
+    row-gap: 40px;
+    padding: 40px;
+    
+    width: 100%;
+    background-color: #fcfcfc;
+    // .details__contact
+
+    &__contact {
+    }
+
+    // .details__experience
+
+    &__experience {
+    }
+
+    // .details__education
+
+    &__education {
+    }
+
+    // .details__hardskills
+
+    &__hardskills {
+    }
+
+    // .details__softskills
+
+    &__softskills {
+    }
+}

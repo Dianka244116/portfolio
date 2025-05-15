@@ -1,0 +1,70 @@
+.experience {
+    display: grid;
+    grid-template-rows: 40px 20px 1fr 20px 20px;
+    grid-template-columns: 1fr 2fr;
+  
+    width: 100%;
+    column-gap: 40px;
+    // .experience__title
+
+    &__title {
+        grid-column: 1 / -1;
+        align-self: center;
+        
+        border-bottom: 2px solid #000;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+    }
+
+    // .experience__name
+
+    &__name {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    // .experience__address
+
+    &__address {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    // .experience__date
+
+    &__date {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    // .experience__post
+
+    &__post {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        font-weight: bold;
+
+        border-left: 2px solid $color-gamma;
+        padding-left: 20px;
+        
+    }
+
+    // .experience__activity
+
+    &__activity {
+        grid-column: 2 / 3;
+        grid-row: 3 / -1;
+
+        border-left: 2px solid $color-gamma;
+        padding-left: 40px;
+
+        & li {
+            margin-bottom: 5px;
+        }
+    }
+}

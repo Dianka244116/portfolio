@@ -1,0 +1,28 @@
+.about {
+  display: grid;
+  grid-template-rows: 200px min-content 200px;
+
+  row-gap: 40px;
+  // .about__image
+
+  &__image {
+    justify-self: center;
+
+    & img {
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  // .about__myself
+
+  &__myself {
+
+  }
+
+  // .about__language
+
+  &__language {
+
+  }
+}

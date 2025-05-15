@@ -1,0 +1,264 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 3fr;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.about {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  background-color: rgb(20, 51, 58);
+  color: white;
+  padding: 40px;
+}
+
+.details {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 200px min-content 200px;
+  row-gap: 40px;
+}
+.about__image {
+  justify-self: center;
+}
+.about__image img {
+  height: 100%;
+  border-radius: 50%;
+}
+.details {
+  display: grid;
+  grid-template-rows: repeat(1fr, 5);
+  place-items: start;
+  place-content: start;
+  row-gap: 40px;
+  padding: 40px;
+  width: 100%;
+  background-color: #fcfcfc;
+}
+.myself {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  row-gap: 20px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
+}
+.myself__title {
+  text-transform: uppercase;
+}
+.language {
+  display: grid;
+  grid-template-rows: 40px 40px 40px;
+  row-gap: 20px;
+}
+.language__title {
+  text-transform: uppercase;
+}
+.language__text {
+  text-transform: uppercase;
+}
+.language__text progress {
+  width: 100%;
+  background-color: gray;
+  height: 10px;
+}
+.language__text progress::-webkit-progress-bar {
+  background-color: rgb(78, 92, 95);
+  height: 10px;
+}
+.language__text progress::-webkit-progress-value {
+  background-color: #f3f3f3;
+  height: 10px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+  grid-template-rows: repeat(1fr, 4);
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+}
+.contact__name {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.contact__profession {
+  grid-column: 1/2;
+  grid-row: 3/5;
+  text-transform: uppercase;
+}
+.contact__address {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.contact__phone {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.contact__email {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.contact__github {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.education {
+  display: grid;
+  grid-template-rows: 40px 1fr 20px 20px;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.education__title {
+  grid-column: 1/-1;
+  align-self: center;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.education__name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.education__address {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.education__date {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.education__diplom {
+  grid-column: 2/3;
+  grid-row: 2/-1;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+.experience {
+  display: grid;
+  grid-template-rows: 40px 20px 1fr 20px 20px;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.experience__title {
+  grid-column: 1/-1;
+  align-self: center;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.experience__name {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.experience__address {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.experience__date {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.experience__post {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-weight: bold;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+.experience__activity {
+  grid-column: 2/3;
+  grid-row: 3/-1;
+  border-left: 2px solid black;
+  padding-left: 40px;
+}
+.experience__activity li {
+  margin-bottom: 5px;
+}
+
+.hardskills {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 40px);
+}
+.hardskills__title {
+  grid-column: 1/-1;
+  align-self: center;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.hardskills__text {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.hardskills__text progress {
+  width: 50%;
+  background-color: #f3f3f3;
+  height: 10px;
+}
+.hardskills__text progress::-webkit-progress-bar {
+  background-color: #b6b9bb;
+  height: 10px;
+}
+.hardskills__text progress::-webkit-progress-value {
+  background-color: rgb(13, 13, 13);
+  height: 10px;
+}
+
+.softskills {
+  width: 100%;
+  display: grid;
+}
+.softskills__title {
+  grid-column: 1/-1;
+  align-self: center;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.softskills__text {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.softskills__text progress {
+  width: 50%;
+  background-color: #272626;
+  height: 10px;
+}
+.softskills__text progress::-webkit-progress-bar {
+  background-color: #b6b9bb;
+  height: 10px;
+}
+.softskills__text progress::-webkit-progress-value {
+  background-color: rgb(30, 24, 24);
+  height: 10px;
+}

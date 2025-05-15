@@ -1,0 +1,50 @@
+.education {
+
+    display: grid;
+    grid-template-rows: 40px 1fr 20px 20px;
+    grid-template-columns: 1fr 2fr;
+  
+    width: 100%;
+    column-gap: 40px;
+    // .education__title
+
+    &__title {
+        grid-column: 1 / -1;
+        align-self: center;
+        
+        border-bottom: 2px solid #000;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+    }
+
+    // .education__name
+    &__name {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    // .education__address
+    &__address {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    // .education__date
+    &__date {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    // .education__diplom
+    &__diplom {
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+
+        border-left: 2px solid $color-gamma;
+        padding-left: 20px;
+    }
+}

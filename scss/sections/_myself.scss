@@ -1,0 +1,17 @@
+.myself {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  row-gap: 20px;
+
+  border-bottom: 1px solid #a5a5a5;
+  padding-bottom: 20px;
+
+  // .myself__title
+  &__title {
+    text-transform: uppercase;
+  }
+
+  // .myself__text
+  &__text {
+  }
+}
