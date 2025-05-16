@@ -16,9 +16,11 @@ window.onload = function () {
             } else {
                 clearInterval(timer);
             }
-        }, 5);
+        }, 10);
     }
 };
+
+
 
 
 
